@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dBlue: hsl(249, 10%, 26%);
+    --grayBlue: hsl(246, 25%, 77%);
+
+    --fontSize: 16px;
+}
+
+*{
+    font-size: var(--fontSize);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.header p{
+    margin: 20px 0 50px 0;
+}
+
+h2{
+    line-height: 1.4;
+    font-size: 40px;
+    padding: 0 10% 0 10%;
+}
+
+body{
+    background-color: var(--red);
+    background-image: url(/images/bg-intro-mobile.png);
+}
+
+h2, p{
+    color: white;
+}
+
+button{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 8px 30px;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cont{
+    margin: 80px 25px 80px 25px;
+
+}
+
+.signUp{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.btn1{
+    background-color: var(--blue);
+    margin-bottom: 15px; 
+}
+
+.btn1:hover{
+    background-color: #918abf;
+}
+
+.btn2:hover{
+    background-color: #77d9af;
+}
+
+.btn2{
+    background-color: var(--green);
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+
+.signUp p{
+    font-size: 14px;
+    color: var(--grayBlue);
+    text-align: center;
+}
+
+em{
+    font-size: 14px;
+    color: var(--red);
+    font-weight: bold;
+    font-style: normal;
+}
+
+input{
+    color: var(--dBlue);
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    border: 1px var(--grayBlue) solid; 
+
+}
+
+input:focus{
+    color: var(--blue);
+    border: 2px var(--blue) solid !important;
+}
+
+
+input::placeholder{
+    color: var(--grayBlue);
+}
+
+
+
+#email_input::placeholder {
+    color: var(--c, var(--grayBlue));
+  }
+
+
+button, .signUp{
+    box-shadow: 0pt 3pt 0 0 var(--dBlue);
+    /*mix-blend-mode: multiply;*/
+}
+
+.info p{
+    color: var(--red);
+    display: none;
+}
+
+@media(min-width: 800px){
+
+    body{
+        background-image: url(/images/bg-intro-desktop.png);
+    }
+
+
+
+    .cont{
+        display: flex;
+        margin: 5% 12%;
+    }
+
+    .item1, .item2{
+        width: 100%;
+
+    }
+
+    .item1 h2, p{
+        padding: 0;
+        text-align: left;
+    }
+
+    .item1{
+        margin: auto;
+        padding: 0 20px;
+    }
+}
